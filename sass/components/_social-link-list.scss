@@ -1,0 +1,12 @@
+.social-link-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    & .social-link:hover,
+    & .social-link:focus {
+            background-color: var(--accent-text-color);
+            color: var(--primary-white-color);
+        }
+}
+

@@ -1,0 +1,20 @@
+/* Логотип */
+.logo {
+    display: inline-block;
+
+    color: var(--accent-text-color);
+    text-decoration: none;
+    font-family: var(--secondary-font-family), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo__part {
+    color: var(--title-text-color);
+}
+
+
+.logo__part--white {
+    color: var(--primary-white-color);
+}

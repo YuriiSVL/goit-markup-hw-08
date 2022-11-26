@@ -1,0 +1,103 @@
+/* Сторінка Портфоліо/кнопки фільтру */
+
+.works {
+  @include section;
+}
+
+.works__title {
+  @extend %visually-hidden;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.works__filter-list {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/* Сторінка Портфоліо/наші роботи */
+
+.works__content-list {
+  flex-wrap: wrap; 
+}
+
+.works-card {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.works__card-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+color: var(--title-text-color);
+}
+
+.works__card-text {
+  line-height: 1.88;
+}
+
+.works__link-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works__thumb-box {
+  position: relative;
+
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+
+  overflow: hidden;
+}
+
+.works__thumb-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--primary-white-color);
+
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works__link-card:hover .works__thumb-overlay,
+.works__link-card:focus .works__thumb-overlay {
+  transform: translateY(0%);
+}
+
+.works__link-card:hover,
+.works__link-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.works__card-caption {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.works__card-title {
+  margin-bottom: 4px;
+}

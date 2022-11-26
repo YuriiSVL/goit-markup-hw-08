@@ -1,0 +1,33 @@
+
+@mixin container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+@mixin section($pt: 94px, $pb: 94px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+@mixin section-title--mb50 {
+  margin-bottom: 50px;
+}
+
+@mixin content-list {
+  display: flex;
+  gap: 30px;
+}
+
+@mixin horisontal-padding ($pl, $pr: $pl) {
+  padding-left: $pl;
+  padding-right: $pr; 
+}
