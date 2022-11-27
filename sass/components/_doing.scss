@@ -1,24 +1,28 @@
 .doing {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
     @include section(47px);
+  }
 }
 
 .doing-item {
-    position: relative;
-    flex-basis: calc((100% - 30px * 2) / 3);
+  position: relative;
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 
 .doing-item__captain {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
-    width: 100%;
-    padding: 27px 15px;
+  width: 100%;
+  padding: 27px 15px;
 
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--primary-white-color);
-    background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }

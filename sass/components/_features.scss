@@ -1,11 +1,7 @@
 /* Секція Особливості */
 
 .features {
-  @include section(60px, 60px);
-
-  @media screen and (min-width: 1200px) {
-    @include section(94px, 47px);
-  }
+  @include section(94px, 47px);
 }
 
 .features__title {
@@ -13,16 +9,17 @@
 }
 
 .feature {
-  @media screen and (max-width: 768px) {
-    margin-bottom: 30px;
-  }
-
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px * 1) / 2);
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 30px * 3) / 4);
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -44,6 +41,9 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .feature__text {
