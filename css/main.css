@@ -412,15 +412,33 @@ ul {
   }
 }
 
-.client {
-  flex-basis: calc((100% - 150px) / 6);
+.clients__content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .client {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 786px) {
+  .client {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid var(--icon-color);
