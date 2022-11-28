@@ -1,26 +1,53 @@
 /* Секція Hero */
 .hero {
-    padding: 200px 0;
-    max-width: 1600px;
-    margin: 0 auto;
+  margin: 0 auto;
 
-    text-align: center;
-    background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero-bg-img.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+  text-align: center;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-bg-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 480px) {
+    padding: 118px 60px;
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // padding: 200px 452px;
+    max-width: 1600px;
+  }
 }
 
 .hero__title {
-    margin: 0 auto 30px auto;
-    width: 696px;
+  margin: 0 auto 30px auto;
+  //   width: 696px;
 
-    color: var(--primary-white-color);
-    font-weight: 900;
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    width: 696px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+.hero__base-button {
+  @include horisontal-padding(24px);
+
+  @media screen and (min-width: 1200px) {
+    @include horisontal-padding(32px);
+  }
 }
