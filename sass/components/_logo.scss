@@ -1,20 +1,27 @@
 /* Логотип */
 .logo {
-    display: inline-block;
+  display: inline-block;
 
-    color: var(--accent-text-color);
-    text-decoration: none;
-    font-family: var(--secondary-font-family), sans-serif;
-    font-weight: 700;
+  color: var(--accent-text-color);
+  text-decoration: none;
+  font-family: var(--secondary-font-family), sans-serif;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
+  }
 }
 
 .logo__part {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
-
 .logo__part--white {
-    color: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
