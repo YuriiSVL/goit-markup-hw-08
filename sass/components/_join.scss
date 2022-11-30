@@ -1,0 +1,23 @@
+.join__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.join__social-link-list {
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
+}
+
+.join__social-link {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
