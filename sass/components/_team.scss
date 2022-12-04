@@ -13,6 +13,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background: var(--primary-white-color);
 
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px * 1) / 2);
+  }
+
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 30px * 3) / 4);
   }
