@@ -34,26 +34,24 @@
   margin-bottom: 20px;
 }
 .footer__join {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
 }
 
 .footer__addrees-join-box {
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: center;
     gap: 165px;
     align-items: baseline;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    margin-bottom: 0;
     // justify-content: center;
 
     align-items: baseline;

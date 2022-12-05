@@ -267,42 +267,43 @@ ul {
 /* Секція Hero */
 .hero {
   margin: 0 auto;
-  padding: 118px 60px;
+  padding: 118px 40px;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/Img_sm@1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/img_sm@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/Img_sm@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/img_sm@2x.jpg");
   }
 }
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/Img_md@1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/img_md@1x.jpg");
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/Img_md@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/img_md@2x.jpg");
   }
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/Img_lg@1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/img_lg@1x.jpg");
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/Img_lg@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/img_lg@2x.jpg");
   }
 }
 @media screen and (min-width: 480px) {
   .hero {
     max-width: 480px;
+    padding: 118px 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -314,6 +315,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    padding: 200px 60px;
   }
 }
 
@@ -605,29 +607,27 @@ ul {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__join {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__join {
     margin-left: 70px;
   }
 }
 
+.footer__addrees-join-box {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__addrees-join-box {
     display: flex;
     justify-content: center;
     gap: 165px;
     align-items: baseline;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__addrees-join-box {
     display: flex;
+    margin-bottom: 0;
     align-items: baseline;
   }
 }
@@ -1164,8 +1164,10 @@ ul {
 }
 
 /* Сторінка Портфоліо/наші роботи */
-.works-card {
-  margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+  .works-card {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .works-card {
